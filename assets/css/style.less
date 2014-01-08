@@ -1,4 +1,5 @@
 @import "variables.less";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,700);
 
 html {
   background: url(../img/bg.png) no-repeat center center fixed;
@@ -17,7 +18,6 @@ body {
   font-size: @baseFontSize;
   line-height: @baseLineHeight;
   color: @textColor;
-  background-color: @bodyBackground;
 }
 
 
@@ -35,4 +35,54 @@ a:hover {
 
 * {
     outline: 0;
+}
+
+.top-bar {
+  height: 128px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.6);
+}
+
+.back-button {
+  float: left;
+  width: 10%;
+  text-align: center;
+  padding-top: 30px;
+  :hover {
+    opacity: 0.5;
+  }
+}
+
+.app-title {
+  float: left;
+  width:  80%;
+  text-align: center;
+  padding-top: 50px;
+  color: @grayDark;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sign-in {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 540px;
+  margin-left: -270px;
+  .title {
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    border-bottom: 1px solid #a3a5a5;
+    background-color: rgba(255,255,255,0.7);
+  }
+  .clients {
+    padding: 15px;
+    background-color: rgba(255,255,255,0.6);
+    border-bottom: 1px solid #a3a5a5;
+  }
+  .poweredby {
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255,255,255,0.7);
+  }
 }
