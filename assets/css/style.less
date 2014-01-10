@@ -14,7 +14,7 @@ html {
 
 body {
   margin: 0;
-  font-family: @baseFontFamily;
+  font-family: 'Open Sans', sans-serif;;
   font-size: @baseFontSize;
   line-height: @baseLineHeight;
   color: @textColor;
@@ -60,7 +60,6 @@ a:hover {
   padding-top: 50px;
   color: @grayDark;
   font-size: 30px;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .sign-in {
@@ -71,24 +70,47 @@ a:hover {
   right: 0;
   width: 540px;
   height: auto;
+  margin: auto;
   margin-top: 250px;
   max-width: 100%;
   max-height: 100%;
   overflow: auto;
+  a {
+    text-decoration: none;
+  }
   .title {
-    padding: 15px;
+    padding: 20px;
     border-radius: 15px 15px 0 0;
     border-bottom: 1px solid #a3a5a5;
     background-color: rgba(255,255,255,0.7);
+    font-size: 25px;
   }
   .clients {
-    padding: 15px;
+    padding: 20px;
     background-color: rgba(255,255,255,0.6);
     border-bottom: 1px solid #a3a5a5;
+    font-size: 20px;
+    color: @grayDark;
+    span {
+      margin-right: 30px;
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+  .clients:hover {
+    opacity: 0.9;
   }
   .poweredby {
-    padding: 15px;
+    padding: 20px;
     border-radius: 0 0 15px 15px;
     background-color: rgba(255,255,255,0.7);
+    a {
+      color: @grayDark;
+      font-weight: 600;
+    }
+    a:hover {
+      color: lighten(@grayDark,20%);
+    }
   }
 }
