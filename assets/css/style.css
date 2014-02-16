@@ -25,7 +25,7 @@ a:hover {
   outline: 0;
 }
 .top-bar {
-  height: 128px;
+  height: 80px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.6);
 }
@@ -33,7 +33,7 @@ a:hover {
   float: left;
   width: 10%;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 .back-button :hover {
   opacity: 0.5;
@@ -42,28 +42,27 @@ a:hover {
   float: left;
   width: 80%;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   color: #333333;
   font-size: 30px;
 }
 .sign-in {
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 0;
   bottom: 0;
   right: 0;
   width: 500px;
   height: auto;
   margin: auto;
-  margin-top: 250px;
-  max-width: 100%;
+  max-width: 90%;
   max-height: 100%;
 }
 .sign-in a {
   text-decoration: none;
 }
 .sign-in .title {
-  padding: 30px 20px;
+  padding: 20px 20px;
   border-radius: 15px 15px 0 0;
   border-bottom: 1px solid #a3a5a5;
   background-color: rgba(255, 255, 255, 0.7);
